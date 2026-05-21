@@ -8,18 +8,18 @@ export default function Home() {
       <Transition />
 
       <div className="contact-page page">
-        <Navbar active="contact" />
+        <Navbar />
 
         <section className="contact-trail-container py-32 px-8 max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-16">
             <div className="lg:w-1/2">
               <div className="contact-card-header-left">
-                <h1 className="text-6xl mb-8">Let's Connect</h1>
+                <h1 className="text-6xl mb-8">Let&apos;s Connect</h1>
 
                 <p className="text-black/60">
-                  I'm always open to discussing new projects, creative ideas or
-                  opportunities to be part of your visions. Feel free to reach
-                  out through the form or social links.
+                  I&apos;m always open to discussing new projects, creative
+                  ideas or opportunities to be part of your visions. Feel free
+                  to reach out through the form or social links.
                 </p>
               </div>
 
@@ -56,7 +56,7 @@ export default function Home() {
               <div className="form-header mb-8">
                 <h2 className="text-3xl mb-2">Start a Project</h2>
                 <p className="text-black/60">
-                  Tell me about your vision and let's make it reality
+                  Tell me about your vision and let&apos;s make it reality
                 </p>
               </div>
 
