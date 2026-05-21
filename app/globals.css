@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: var(--font-poppins);
+  --font-roboto-slab: var(--font-roboto-slab);
+  --color-primary: #000000;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+:root {
+  --primary: #000000;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.roboto {
+  font-family: var(--font-roboto-slab), serif;
+}
+
+/* Page Transitions */
+.transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.transition-overlay {
+  width: 20%;
+  height: 100%;
+  background: var(--primary);
+  transform: translateY(-100%);
+}
+
+/* Template Banners */
+.w-1\/8 {
+  width: 12.5%;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.left-1\/8 {
+  left: 12.5%;
+}
+
+.left-2\/8 {
+  left: 25%;
+}
+
+.left-3\/8 {
+  left: 37.5%;
+}
+
+.left-4\/8 {
+  left: 50%;
+}
+
+.left-5\/8 {
+  left: 62.5%;
+}
+
+.left-6\/8 {
+  left: 75%;
+}
+
+.left-7\/8 {
+  left: 87.5%;
+}
