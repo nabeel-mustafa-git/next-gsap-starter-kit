@@ -9,18 +9,20 @@ export default function Navbar() {
 
   const links = [
     { label: "Home", href: "/" },
-    { label: "About", href: "#about" },
+    { label: "Documentation", href: "/documentation" },
     { label: "Contact", href: "/contact" },
   ];
 
   return (
     <>
-      <header className="fixed top-5 left-0 right-0 z-[999] mx-auto w-full max-w-3xl px-4">
+      <header
+        className={`fixed top-5 left-0 right-0 mx-auto w-full max-w-3xl px-4 transition-all duration-300 ${isMenuOpen ? "z-10000" : "z-999"}`}
+      >
         <nav className="flex items-center justify-between rounded-full border border-black/10 bg-white/80 p-1 backdrop-blur-lg">
           {/* Logo */}
           <div className="flex cursor-pointer items-center gap-2 rounded-full px-3 py-1.5 transition-colors hover:bg-black/5">
             <p className="font-roboto-slab text-2xl font-bold uppercase tracking-tight text-black">
-              ✦
+              <TransitionLink href={"/"} label={"✦"} />
             </p>
           </div>
 
@@ -38,9 +40,9 @@ export default function Navbar() {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
-            <button className="hidden rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 lg:block">
-              Login
-            </button>
+            <div className="hidden rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 lg:block">
+              <TransitionLink href={"/documentation"} label={"Get Started"} />
+            </div>
 
             {/* Mobile Menu Toggle */}
             <button
@@ -60,7 +62,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-[9998] transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed inset-0 z-[9999] transform bg-white transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -78,12 +80,9 @@ export default function Navbar() {
           </div>
 
           <div className="mt-auto flex flex-col gap-4">
-            <button className="w-full rounded-full border border-black/10 py-4 text-lg font-bold uppercase text-black">
-              Sign In
-            </button>
-            <button className="w-full rounded-full bg-primary py-4 text-lg font-bold uppercase text-white">
-              Get Started
-            </button>
+            <div className="w-full rounded-full bg-primary py-4 text-lg font-bold uppercase text-white text-center">
+              <TransitionLink href={"/documentation"} label={"Get Started"} />
+            </div>
           </div>
         </div>
       </div>

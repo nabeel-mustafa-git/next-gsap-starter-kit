@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import ReactLenis from "lenis/react";
 
 const poppins = localFont({
   src: [
@@ -164,7 +167,15 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${robotoSlab.variable} antialiased`}
     >
-      <body className="flex flex-col">{children}</body>
+      <body className="flex flex-col">
+        <ReactLenis root>
+          <Navbar />
+
+          {children}
+
+          <Footer />
+        </ReactLenis>
+      </body>
     </html>
   );
 }

@@ -5,9 +5,10 @@ import { animatePageOut } from "../utils/animation";
 interface Props {
   href: string;
   label: string;
+  className?: string;
 }
 
-const TransitionLink = ({ href, label }: Props) => {
+const TransitionLink = ({ href, label, className }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -17,7 +18,7 @@ const TransitionLink = ({ href, label }: Props) => {
     }
   };
   return (
-    <button className="cursor-pointer" onClick={handleClick}>
+    <button className={className || "cursor-pointer"} onClick={handleClick}>
       {label}
     </button>
   );
