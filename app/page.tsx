@@ -1,7 +1,6 @@
 "use client";
 
 import { Hero } from "./Components/Hero";
-import { ReactLenis } from "lenis/react";
 
 export default function Home() {
   return (

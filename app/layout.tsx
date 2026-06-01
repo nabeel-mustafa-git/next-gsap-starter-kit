@@ -153,7 +153,7 @@ const robotoSlab = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Nabe Starter Kit",
+  title: "GSAP Starter Kit",
   description: "A high-performance Next.js starter kit!",
 };
 

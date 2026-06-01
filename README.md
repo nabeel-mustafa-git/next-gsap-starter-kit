@@ -1,4 +1,4 @@
-# ✦ Nabe Starter Kit ✦
+# ✦ GSAP Starter Kit ✦
 
 <div align="center">
   <h3>Modern. Minimal. Animated.</h3>
@@ -6,7 +6,7 @@
 
   <p>
     <a href="https://gsapstarter.vercel.app/"><strong>Live Demo</strong></a> •
-    <a href="https://www.npmjs.com/package/gsap-starter-kit"><strong>NPM Package</strong></a>
+    <a href="https://www.npmjs.com/package/create-gsap-starter-kit"><strong>NPM Package</strong></a>
   </p>
 
   <p>
@@ -28,7 +28,13 @@ Instantly spin up a fresh Next.js environment bundled with GSAP animation workfl
 Generate your project folder using npx:
 
 ```bash
-npx gsap-starter-kit your-project-name
+npx create-gsap-starter-kit your-project-name
+```
+
+Or the shorthand:
+
+```bash
+npm init gsap-starter-kit your-project-name
 ```
 
 ### Development
@@ -67,9 +73,9 @@ npm run dev
 
 ---
 
-## �️ Customization & Cleanup
+## 🛠️ Customization & Cleanup
 
-The Nabe Starter Kit is designed to be modular. You can keep what you need and remove what you don't.
+The GSAP Starter Kit is designed to be modular. You can keep what you need and remove what you don't.
 
 | Component         | How to Remove                                                               |
 | :---------------- | :-------------------------------------------------------------------------- |

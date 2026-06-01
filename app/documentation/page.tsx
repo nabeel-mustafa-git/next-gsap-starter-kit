@@ -11,7 +11,7 @@ export default function Documentation() {
               Documentation
             </h1>
             <p className="text-black/60 text-sm max-w-sm mx-auto font-medium">
-              Everything you need to know to get started with the Nabe Starter
+              Everything you need to know to get started with the GSAP Starter
               Kit.
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function Documentation() {
             </p>
             <div className="pt-2">
               <a
-                href="https://www.npmjs.com/package/gsap-starter-kit"
+                href="https://www.npmjs.com/package/create-gsap-starter-kit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold underline underline-offset-4 hover:text-black/60 transition-colors"
@@ -50,12 +50,28 @@ export default function Documentation() {
               </p>
               <div className="bg-black/5 rounded-xl p-6 font-mono text-sm border border-black/5 relative group">
                 <code className="text-black/80">
-                  npx gsap-starter-kit your-project-name
+                  npx create-gsap-starter-kit your-project-name
                 </code>
                 <button
                   onClick={() =>
                     navigator.clipboard.writeText(
-                      "npx gsap-starter-kit your-project-name",
+                      "npx create-gsap-starter-kit your-project-name",
+                    )
+                  }
+                  className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-[10px] uppercase font-bold tracking-widest bg-white border border-black/10 px-2 py-1 rounded"
+                >
+                  Copy
+                </button>
+              </div>
+              <p className="text-sm font-medium">Or the npm init shorthand:</p>
+              <div className="bg-black/5 rounded-xl p-6 font-mono text-sm border border-black/5 relative group">
+                <code className="text-black/80">
+                  npm init gsap-starter-kit your-project-name
+                </code>
+                <button
+                  onClick={() =>
+                    navigator.clipboard.writeText(
+                      "npm init gsap-starter-kit your-project-name",
                     )
                   }
                   className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-[10px] uppercase font-bold tracking-widest bg-white border border-black/10 px-2 py-1 rounded"
@@ -118,7 +134,7 @@ export default function Documentation() {
                 Customization & Cleanup
               </h2>
               <p className="text-sm font-medium">
-                The Nabe Starter Kit is designed to be modular. You can keep
+                The GSAP Starter Kit is designed to be modular. You can keep
                 what you need and remove what you don&apos;t.
               </p>
             </div>

@@ -33,7 +33,9 @@ export function Hero() {
   const copyToClipboard = () => {
     if (copied) return;
 
-    navigator.clipboard.writeText("npx gsap-starter-kit your-project-name");
+    navigator.clipboard.writeText(
+      "npx create-gsap-starter-kit your-project-name",
+    );
 
     const tl = gsap.timeline();
 
@@ -340,7 +342,7 @@ export function Hero() {
             <button
               ref={buttonRef}
               onClick={copyToClipboard}
-              className="group flex items-center justify-center rounded-full bg-black px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-white transition-opacity hover:opacity-90 cursor-pointer w-[400px] overflow-hidden"
+              className="group flex items-center justify-center rounded-full bg-black px-4 py-3 text-[10px] sm:text-xs font-bold uppercase tracking-[0.1em] text-white transition-opacity hover:opacity-90 cursor-pointer w-full max-w-[32rem] overflow-hidden"
             >
               <div
                 ref={textRef}
@@ -353,7 +355,7 @@ export function Hero() {
                   </>
                 ) : (
                   <>
-                    npx gsap-starter-kit project-name
+                    npx create-gsap-starter-kit your-project-name
                     <ArrowRight
                       className="h-3 w-3 transition-transform group-hover:translate-x-1"
                       aria-hidden="true"
