@@ -3,7 +3,19 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly" # Checks for new Next.js/GSAP/Lenis updates every week
+      interval: "weekly"
     open-pull-requests-limit: 5
     labels:
       - "dependencies"
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+    ignore:
+      # eslint-config-next plugins do not support ESLint 10 yet
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      # Keep @types/node aligned with your Node LTS major (currently 22)
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
